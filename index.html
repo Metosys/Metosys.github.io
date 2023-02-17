@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css"></style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Rock, Paper, Scissors!</h1>
+    </div>
+    <div class="field">
+        <h3 class="centered">First to 5 wins!</h3>
+        <div class="versus">
+            <div>
+                <img class="player" id="playerOne" src="pics/playerOne.png">
+            </div>
+            <div>
+                <h1 class="centered"> Vs</h1>
+                <p id="result"></p> 
+            </div>
+            <div>
+                <img class="player" id="playerTwo" src="pics/playerTwo.png">
+            </div>
+        </div>
+    </div>
+     
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="winner"></p>
+        </div>
+    </div>
+
+    <div class="selection">
+        <h3>Select Your Hand:</h3>
+        <div class="btns">
+            <button class="btn" id="paper">Select Paper</button>
+            <button class="btn" id="rock">Select Rock</button>
+            <button class="btn" id="scissors">Select Scissors</button> 
+        </div>
+    </div>
+    
+    <div class="scoreboard">
+        
+        <div class="score">
+            <p>Player Score:</p>
+            <p id="playerScore">0</p>
+        </div>
+        <div class="score">
+            <p>Computer Score:</p>
+            <p id="computerScore">0</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
