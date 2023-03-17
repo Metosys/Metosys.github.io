@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="displayContainer">
+            <div class="displaySmall" id="displaySmall"></div>
+            <div class="displayBig" id="displayBig">0</div>
+        </div>
+        <div class="numpad">
+            <button class="op btn" id="clear" onclick="clearAll()">C</button>
+            <button class="op btn" id="backspace" onclick="backspace()"><<</button>
+            <button class="op btn" onclick="percentage()">%</button>
+            <button class="op btn" id="power" onclick="powerButton()">I/O</button>
+            <button class="num btn" id="1" value='1' onclick='numInput(this)'>1</button>
+            <button class="num btn" id="2" value='2' onclick='numInput(this)'>2</button>
+            <button class="num btn" id="3" value="3" onclick="numInput(this)">3</button>
+            <button class="op btn" id="add" value="+" onclick="opInput(this)">+</button>
+            <button class="num btn" id="4" value="4" onclick="numInput(this)">4</button>
+            <button class="num btn" id="5" value="5" onclick="numInput(this)">5</button>
+            <button class="num btn" id="6" value="6" onclick="numInput(this)">6</button>
+            <button class="op btn" id="sub" value="-" onclick="opInput(this)">-</button>
+            <button class="num btn" id="7" value="7" onclick="numInput(this)">7</button>
+            <button class="num btn" id="8" value="8" onclick="numInput(this)">8</button>
+            <button class="num btn" id="9" value="9" onclick="numInput(this)">9</button>
+            <button class="op btn" id="mult" value="x" onclick="opInput(this)">x</button>
+            <button class="op btn" id="decimal" value="." onclick="decInput(this)">.</button>
+            <button class="num btn" id="0" value="0" onclick="numInput(this)">0</button>
+            <button class="equal btn" id="equals" value="=" onclick="equals(this)">=</button>
+            <button class="op btn" id="divide" value="÷" onclick="opInput(this)">÷</button>
+        </div>
+    </div>
+</body>
+</html>
